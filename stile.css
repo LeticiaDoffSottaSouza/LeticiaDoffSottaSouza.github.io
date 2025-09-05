@@ -1,19 +1,20 @@
-body{
-        background-color: rgb(245, 158, 187);
-        background-size: cover;  
-        margin:0;
-        padding:0;
-        color: white; 
-    }
+body {
+    background-color: rgb(245, 158, 187);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
 header {
     background-color: rgb(180, 89, 119);
-     color: white;
-     padding: 10px 0;
-     text-align:center;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
 }
 
 header h1 {
-    margin:0;
+    margin: 0;
 }
 
 nav ul {
@@ -27,15 +28,15 @@ nav ul a {
 }
 
 nav ul li {
-    display:inline;
-    margin:0 10px;
+    display: inline;
+    margin: 0 10px;
 }
 
 .banner {
     background-size: cover;
     padding: 80px 0;
     text-align: center;
-    color:rgb(156, 56, 89);
+    color: rgb(156, 56, 89);
 }
 
 .banner h2 {
@@ -43,22 +44,22 @@ nav ul li {
 }
 
 section {
-    padding:20px;
+    padding: 20px;
     margin: 0 10px;
 }
 
 .cartao {
-   border: 1px solid #ddd;
-   /* borda quadrado arredondado */
-   border-radius: 10px;
-   padding: 30px;
-   margin-bottom: 35px;
-   display: inline-block;
-   width: 300px;
-   vertical-align: top;
-   background-color: rgba(255, 255, 255, 0.529);
-   box-shadow: 0 4px 8px rgba(234, 0, 255, 0.2);
-   transition: transform 0,3s ease,box-shadow o,3s ease;
+    border: 1px solid #ddd;
+    /* borda quadrado arredondado */
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 35px;
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    background-color: rgba(255, 255, 255, 0.529);
+    box-shadow: 0 4px 8px rgba(234, 0, 255, 0.2);
+    transition: transform 0, 3s ease, box-shadow o, 3s ease;
 }
 
 .cartao:hover {
@@ -66,7 +67,7 @@ section {
     box-shadow: 0 8px 16px rgba(255, 0, 0, 0.2);
 }
 
-.cartao img{
+.cartao img {
     width: 100%;
     border-radius: 8px;
 }
@@ -84,45 +85,45 @@ section {
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background: #ddb4f6;
 }
 
-header{
+header {
     background: #9a3299;
     color: #e1b3fd;
     padding: 1rem 0;
     text-align: center;
 }
 
-header h1{
+header h1 {
     margin-bottom: 0.5rem;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     padding: 0;
 }
 
-nav ul li{
+nav ul li {
     display: inline;
     margin: 0 10px;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: #e185cc;
     transition: color 0.3s ease;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: rgb(183, 12, 192);
     cursor: pointer;
 }
 
-section{
+section {
     padding: 2rem;
     margin: 1rem;
     background: 8px #dc81d3;
@@ -130,22 +131,22 @@ section{
     border-radius: 8px;
 }
 
-.container{
+.container {
     max-width: 800px;
     margin: 0 auto;
 }
 
-h2{
+h2 {
     margin-bottom: 1rem;
 }
 
-.sobre-mim{
+.sobre-mim {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-.foto-perfil{
+.foto-perfil {
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -153,25 +154,31 @@ h2{
     border: 1px solid #333;
 }
 
-.sobre-informacoes{
+.sobre-informacoes {
     flex: 1;
 }
 
-.sobre-informacoes h2{
+.sobre-informacoes h2 {
     margin-bottom: 0.5rem;
 }
 
-.sobre-informacoes p{
+.sobre-informacoes p {
     font-size: 1rem;
     color: #ffcdff;
 }
 
-.cards{
+.cards {
     display: flex;
     gap: 1rem;
+    margin-top: 1rem;
 }
 
-.card{
+.scrollbar {
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.card {
     background: linear-gradient(#fface8, #f597fe, #cc89f6);
     border-radius: 8px;
     padding: 1rem;
@@ -181,24 +188,72 @@ h2{
     text-align: center;
 }
 
-.card:hover{
+.card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.skills i{
+.skills i {
     font-size: 2rem;
     color: rgb(156, 60, 166);
 }
 
-h3{
+h3 {
     color: #9a3299;
 }
 
-.card h3{
+.card h3 {
     color: #fff;
 }
 
-img{
-    height: 120px;
+img {
+    height: 180px;
 }
+
+
+
+
+
+/* Customize the entire scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+    /* Width of the scrollbar */
+    height: 6px;
+    /* Height of the scrollbar (for horizontal scrollbars) */
+}
+
+/* Customize the scrollbar track */
+::-webkit-scrollbar-track {
+    background: #f30fba;
+    /* Light grey background */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+/* Customize the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Dark grey color */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+/* Add hover effect to the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Darker grey when hovered */
+}
+
+Notes: Browser Compatibility: This approach works only in browsers that support the ::-webkit-scrollbar pseudo-elements. It won't work in Firefox, as it uses a different method for scrollbar customization.
+ Fallback for Firefox: To style scrollbars in Firefox,
+you can use the scrollbar-color and scrollbar-width properties:
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    /* Options: auto, thin, none */
+    scrollbar-color: #888 #f1f1f1;
+    /* Thumb color and track color */
+}
+
+You can combine both methods for cross-browser compatibility.
